@@ -170,7 +170,7 @@ public final class DropDown: UIView {
 
 	Changing the corner radius automatically reloads the drop down.
 	*/
-	public dynamic var cornerRadius = DPDConstant.UI.CornerRadius {
+	public dynamic var cornerRad = DPDConstant.UI.CornerRadius {
 		willSet {
 			tableViewContainer.layer.cornerRadius = newValue
 			tableView.layer.cornerRadius = newValue
@@ -203,7 +203,7 @@ public final class DropDown: UIView {
 
 	Changing the shadow opacity automatically reloads the drop down.
 	*/
-	public dynamic var shadowOpacity = DPDConstant.UI.Shadow.Opacity {
+	public dynamic var shadowOpac = DPDConstant.UI.Shadow.Opacity {
 		willSet { tableViewContainer.layer.shadowOpacity = newValue }
 		didSet { reloadAllComponents() }
 	}
@@ -213,7 +213,7 @@ public final class DropDown: UIView {
 
 	Changing the shadow radius automatically reloads the drop down.
 	*/
-	public dynamic var shadowRadius = DPDConstant.UI.Shadow.Radius {
+	public dynamic var shadowRad = DPDConstant.UI.Shadow.Radius {
 		willSet { tableViewContainer.layer.shadowRadius = newValue }
 		didSet { reloadAllComponents() }
 	}
@@ -436,16 +436,16 @@ private extension DropDown {
 		super.backgroundColor = .clear
 
 		tableViewContainer.layer.masksToBounds = false
-		tableViewContainer.layer.cornerRadius = cornerRadius
+		tableViewContainer.layer.cornerRadius = cornerRad
 		tableViewContainer.layer.shadowColor = shadowColor.cgColor
 		tableViewContainer.layer.shadowOffset = shadowOffset
-		tableViewContainer.layer.shadowOpacity = shadowOpacity
-		tableViewContainer.layer.shadowRadius = shadowRadius
+		tableViewContainer.layer.shadowOpacity = shadowOpac
+		tableViewContainer.layer.shadowRadius = shadowRad
 
 		tableView.rowHeight = cellHeight
 		tableView.backgroundColor = tableViewBackgroundColor
 		tableView.separatorColor = separatorColor
-		tableView.layer.cornerRadius = cornerRadius
+		tableView.layer.cornerRadius = cornerRad
 		tableView.layer.masksToBounds = true
 
 		setHiddentState()

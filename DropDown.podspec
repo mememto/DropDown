@@ -8,8 +8,8 @@ Pod::Spec.new do |s|
                    This drop down is to overcome the loss of usability and user experience due to the UIPickerView. Material Design did a good job there so this drop down is very inspired by it. It appears at the right location instead of the bottom of the screen as default with UIPickerView and if possible, all options are displayed at once.
                    DESC
 
-  s.homepage = "https://github.com/AssistoLab/DropDown"
-  s.screenshots = "https://github.com/AssistoLab/DropDown/blob/master/Screenshots/1.png?raw=true", "https://github.com/AssistoLab/DropDown/blob/master/Screenshots/2.png?raw=true"
+  s.homepage = "https://github.com/mememto/DropDown"
+  s.screenshots = "https://github.com/mememto/DropDown/blob/master/Screenshots/1.png?raw=true", "https://github.com/mememto/DropDown/blob/master/Screenshots/2.png?raw=true"
 
   s.license = { :type => "MIT", :file => "LICENSE" }
 
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 
   s.platform = :ios, '8.0'
   s.source = {
-    :git => "https://github.com/AssistoLab/DropDown.git",
+    :git => "https://github.com/mememto/DropDown.git",
     :tag => "v#{s.version.to_s}"
   }
 
